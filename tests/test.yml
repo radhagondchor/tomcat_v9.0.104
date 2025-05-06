@@ -1,0 +1,9 @@
+---
+- name: Test Tomcat Role
+  hosts: web
+  become: true
+  roles:
+    - role: /home/radha/tomcat_v9.0.104
+      vars:
+        tomcat_group: "tomcat"
+        tomcat_user: "tomcat"

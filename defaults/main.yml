@@ -1,0 +1,23 @@
+# defaults/main.yml
+---
+apt: 
+tomcat_version: "9.0.104"
+tomcat_major_version: "{{ tomcat_version.split('.')[0] }}"
+tomcat_user: "tomcat"
+tomcat_group: "tomcat"
+tomcat_home: "/opt/tomcat"
+java_home: "/usr/lib/jvm/default-java"
+manager_password: "Radha@123"
+admin_password: "Radha@123"
+packages:
+  - default-jdk
+  - wget
+  - curl          
+  - libc6
+  - libx11-6
+  - libxext6
+  - libxrender1
+  - libstdc++6
+  - libssl-dev          
+  - freetype2-demos
+  - fontconfig
